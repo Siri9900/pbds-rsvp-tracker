@@ -1,1 +1,14 @@
-ECHO is on.
+# Ignore environment files
+.env.local
+.env.example
+
+# Ignore build output
+.next/
+
+# Ignore dependencies
+node_modules/
+
+# Ignore system files
+*.log
+.DS_Store
+
