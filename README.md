@@ -12,7 +12,30 @@ rsvp.user_id → users.id
 RLS: Disabled for assignment review
 Sample Data: Added via Supabase Table Editor
 
+## use command prompt and  vs code 
+## In command prompt:
+create a new folder name: my-events-app
 
+## paste all codes in current directory
+cd my-events-app
+
+## need to install following packages:
+
+√ Which linter would you like to use? » ESLint
+√ Would you like to use Tailwind CSS? ... No / Yes
+√ Would you like your code inside a `src/` directory? ... No / Yes
+√ Would you like to use App Router? (recommended) ... No / Yes
+√ Would you like to use Turbopack? (recommended) ... No / Yes
+√ Would you like to customize the import alias (`@/*` by default)? ... No / Yes
+
+## creat a new next.js in your project folder
+Creating a new Next.js app in C:\Users\admin\my-events-app.
+
+## install supabase:
+C:\Users\admin\my-events-app>npm install @supabase/supabase-js
+
+## open vs code 
+add 
 # PBDS – Event & RSVP Tracker
 
 A full-stack web app built with **Next.js** and **Supabase** that allows users to view upcoming events and track RSVP responses in a clean, tabular format. Designed for clarity, simplicity, and real-world deployment workflows.
@@ -50,8 +73,6 @@ This file is ignored by Git. A .env.example is provided to guide setup.
 npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 
 
