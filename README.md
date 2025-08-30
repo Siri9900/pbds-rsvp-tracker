@@ -1,7 +1,12 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Supabase Schema
-Tables:
+
+Go to https://supabase.com
+Create a new project
+Copy your SUPABASE_URL and SUPABASE_ANON_KEY from Project Settings → API
+
+create Tables:
 events: stores event details
 rsvp: stores RSVP entries with foreign key to events
 user: optional table for user profiles
@@ -16,7 +21,6 @@ Sample Data: Added via Supabase Table Editor
 ## In command prompt:
 create a new folder name: my-events-app
 
-## paste all codes in current directory
 cd my-events-app
 
 ## need to install following packages:
@@ -34,8 +38,20 @@ Creating a new Next.js app in C:\Users\admin\my-events-app.
 ## install supabase:
 C:\Users\admin\my-events-app>npm install @supabase/supabase-js
 
+## Create .env.local
+NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+
+This file is ignored by Git. A .env.example is provided to guide setup.
+
 ## open vs code 
-add 
+create a home-page----> add about/ view events/ track rsvp pages
+
+## run locally 
+npm run dev
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
 # PBDS – Event & RSVP Tracker
 
 A full-stack web app built with **Next.js** and **Supabase** that allows users to view upcoming events and track RSVP responses in a clean, tabular format. Designed for clarity, simplicity, and real-world deployment workflows.
@@ -55,26 +71,30 @@ A full-stack web app built with **Next.js** and **Supabase** that allows users t
 
 ### 1. Clone the repo
 
-```bash
-git clone https://github.com/your-username/pbds-rsvp-tracker.git
-cd pbds-rsvp-tracker
+in git create a repo
+
+```command prompt
+C:\Users\admin\my-events-app>cd "C:\Users\admin\my-events-app"
+git init
+git add .
+git commit -m "Initial commit"
+git config --global user.email "@gmail.com"
+git commit -m "Initial commit"
+
+git branch  
+default master
+
+git branch -m master main
+change from master to main
+
+git branch
+
+git push -u origin main
+
+ https://github.com/user_name/pbds-rsvp-tracker/pull/new/main
+ change user name
 
 ```
-## install dependencies
-npm install
-
-## Create .env.local
-NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
-
-This file is ignored by Git. A .env.example is provided to guide setup.
-
-## run locally 
-npm run dev
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-
 
 ## Deploy on Vercel
 
